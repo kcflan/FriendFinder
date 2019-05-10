@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder Survey</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>   
+    <script src="/assets/match.js"></script>
+    <link  rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center">Survey Questions</h2>
+        <a href="/"><button type="button" class="btn btn-lg btn-default"><span class="fa fa-home"></span></button></a>
+        <hr>
+        <form>
+            <h3 class="text-center">About you</h3>
+            <div class="form-group">
+                <label for="name"><b>Name</b> <span class="req">(Required)</span></label>
+                <input type="text" class="form-control required" id="name" placeholder="What's Your Name?" required>
+                <label for="photo"><b>Photo</b> <span class="req">(Required)</span></label>
+                <input type="text" class="form-control required" id="photo"
+                    placeholder="Enter a link to an online photo of yourself." required>
+            </div>
+            <hr>
+            <h3 class="text-center">Questions</h3>
+            <div class="form-group" method="post" action="/api/friends">
+
+                <br><label class="h5" for="question1">I Would Prefer to Be Able To Copy And Paste In Real Life, Over
+                    Undo In Real Life.</label>
+                <select class="form-control question" id="question1" name="question1">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br><label class="h5" for="question2">I Would Prefer to Live Permanently in a Zoo, Over a Roller Coaster
+                    Park.</label>
+                <select class="form-control question" id="question2" name="question2">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br><label class="h5" for="question3">I Would Prefer to Be Too Hot, Over Too Cold.</label>
+                <select class="form-control question" id="question3" name="question3">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br><label class="h5" for="question4">I Would Prefer to Live In a Tree House, Over a Cave.</label>
+                <select class="form-control question" id="question4" name="question4">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br><label class="h5" for="question5">I Would Prefer to Be Able To Fly, Over Be Invisible.</label>
+                <select class="form-control question" id="question5" name="question5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br><label class="h5" for="question6">I Would Prefer to Be Born With An Elephant Trunk, Over a Giraffe
+                    Neck.</label>
+                <select class="form-control question" id="question6" name="question6">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br><label class="h5" for="question7">I Would Prefer to Take a Guaranteed $100,000, Over a 50/50 Chance
+                    At $1,000,000.</label>
+                <select class="form-control question" id="question7" name="question7">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br><label class="h5" for="question8">I Would Prefer to Have No Knees, Over No Elbows.</label>
+                <select class="form-control question" id="question8" name="question8">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br><label class="h5" for="question9">I Would Prefer to Live Without TV, Over Without Music.</label>
+                <select class="form-control question" id="question9" name="question9">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <br><label class="h5" for="question10">I Would Prefer to Hibernate For 3 Months and Have 9 Months Of
+                    24/7 Alertness Without Being Tired, Over Keeping Your Current Sleep Schedule.</label>
+                <select class="form-control question" id="question10" name="question10">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <button type="submit" id="submit-btn" class="btn btn-lg btn-info submit"><span class="fa fa-rocket"></span>
+                    Submit</button>
+            </div>
+        </form>
+
+    </div>
+    <hr>
+    <footer class="footer">
+        <div class="container">
+            <p><a href="/api/friends">API Friends List</a> | <a
+                    href="https://github.com/bootcampkevin/FriendFinder">GitHub FF Repo</a>
+        </div>
+    </footer>
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Friend Match</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>Your Best Friend Match Is:</p>
+            <div class="h3 text-center" id="friendName"></div>
+            <hr>
+            <img class="text-center" id="friendPhoto" style="width: 100%;"></img>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a href="/survey"><button type="button" class="btn btn-primary">Fill Survey Again</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
