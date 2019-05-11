@@ -1,7 +1,7 @@
 //dependancies
 const express = require('express');
 const path = require('path');
-//const body = require('body-parser');
+const body = require('body-parser');
 
 // get html and api routers
 // const htmlRouter = require('./app/routing/apiRoutes');
